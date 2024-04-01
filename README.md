@@ -11,7 +11,9 @@ The algorithm follows a simple process of data collection, iterating over the pr
 To run the backend, follow these commands:
 1.Navigate to the backend directory:
 ### `cd backend`
-2.Run the application using Node.js:
+2.Install packages
+### `npm i`
+3.Run the application using Node.js:
 ### `node app`
 
 Runs the app in the development mode.\
@@ -23,7 +25,9 @@ note: The controller is located in the app.js file and all calculations are perf
 
 1.Navigate to the frontend directory:
 ### `cd frontend`
-2.Start the application using npm:
+2.Install packages
+### `npm i --force`
+3.Start the application using npm:
 ### `npm start`
 
 Runs the app in the development mode.\
@@ -34,8 +38,10 @@ Ensure that the server and client are running before executing the tests.
 
 1.Navigate to the testing directory:
 ### `cd testing`
-2.Run the tests using npx nyc and playwright:
-### `npx nyc --reporter=text-summary npx playwright test`
+2.Install packages
+### `npm i`
+3.Run the tests using npx nyc and playwright:
+### `npx playwright test`
 
 After the output appears in the terminal, press Ctrl + C to display the test coverage percentages.
 Execute these commands in order to run the tests for your project.
