@@ -1,9 +1,12 @@
 Assumptions and Course of Action:
 
 1.Operating Room Hours: It is assumed, based on the provided hours, that an operating room is active for 16 hours per day.
+
 2.Active Days: Active days in the operating room are considered as any day where surgeries are performed, with at least one surgery. Calculation of active days is based on this assumption.
+
 3.Staff Data: Staff data is presented as general for the entire hospital.
-4.Room Usage Percentages: Usage percentages for rooms are presented as a general overview.
+
+4.Usage percentage is shown for each room separately
 
 The algorithm follows a simple process of data collection, iterating over the provided data and returning it in a JSON object. To avoid counting duplicates erroneously, the algorithm utilizes data structures such as sets extensively.
 
@@ -40,8 +43,10 @@ Ensure that the server and client are running before executing the tests.
 ### `cd testing`
 2.Install packages
 ### `npm i`
-3.Run the tests using npx nyc and playwright:
+3.Run all the tests:
 ### `npx playwright test`
+4.run a specific test:
+### `npx playwright test <nameTest>`
 
 After the output appears in the terminal, press Ctrl + C to display the test coverage percentages.
 Execute these commands in order to run the tests for your project.
